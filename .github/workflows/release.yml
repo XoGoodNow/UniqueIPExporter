@@ -19,7 +19,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/XoGoodNow/UniqueIPEporter
+          images: ghcr.io/xogoodnow/uniqueipexporter
       -
         name: Login to GitHub Container Registry
         uses: docker/login-action@v2
@@ -33,6 +33,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/XoGoodNow/UniqueIPEporter:latest
+          tags: ghcr.io/xogoodnow/uniqueipexporter:latest
 
 
